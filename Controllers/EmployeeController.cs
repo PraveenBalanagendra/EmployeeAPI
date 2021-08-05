@@ -39,6 +39,7 @@ namespace EmployeeAPI.Controllers
         [HttpPost]
         public Employee Post(Employee emp)
         {
+            Task.Delay(1000 * 70).Wait();
             return emp;
         }
     }
